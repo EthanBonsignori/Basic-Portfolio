@@ -24,7 +24,7 @@ header {
 
 #namebox {
     position: absolute;
-    width: 340px;
+    width: 275px;
     top: 23px;
     left: 25%;
 }
@@ -55,17 +55,11 @@ header {
     color: #999999;
 }
 
-.nav ul li a:hover {
-    color: #4aaaa5;
-}
+.nav ul li a:hover {color: #4aaaa5;}
 
-#borderR {
-    border-right: 1px solid #efefef;
-}
+#borderR {border-right: 2px solid #efefef;}
 
-#borderL {
-    border-left: 1px solid #efefef;
-}
+#borderL {border-left: 2px solid #efefef;}
 
 /*End header
 Begin main content */
@@ -85,7 +79,7 @@ Begin main content */
     background-color: #ffffff;
 }
 
-#aboutme {
+#contenttitle {
     color: #4aaaa5;
     padding-left: 30px;
     padding-top: 10px;
