@@ -233,18 +233,26 @@ input[type=text], select, textarea {
 
 #returnbox {
     text-align: center;
-    border: 1px solid #4aaaa5;
+    background-color: #4aaaa5;
     margin-left: 40%;
     margin-right: 40%;
+    padding: 5px;
 }
 
 #return {
     text-decoration: none;
-    color: #666666;
-    margin: 10px;
+    color: #ffffff;
+    font-size: 18px;
 }
 
 #returnbox:hover {
-    background-color: #4aaaa5;
+    background-color: #666666;
     color: #ffffff;
+}
+
+#mail {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
 }
