@@ -105,6 +105,7 @@ header {
     margin: 0px auto;
     width: 960px;
     background-color: #ffffff;
+    overflow: auto;
 }
 
 .contenttitle {
@@ -138,25 +139,30 @@ header {
 }
 
 /* Portfolio */
+
 .portfolio-content {
     padding: 30px;
-    width: 500px;
 }
 
 .portfolio-pic {
-    display: inline;
     position: relative;
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 50px;
+    margin-right: 40px;
 }
 
 .portfolio-text {
     position: absolute;
-    bottom: 50px;
-    width: 200px;
+    width: 100%;
     background-color: #4aaaa5;
-    padding: 15px;
     color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    bottom: 12px;
     text-align: center;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 
