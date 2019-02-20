@@ -10,6 +10,7 @@ h1, h2, h3, h4, h5 {
     font-family: Georgia, 'Times New Roman'
 }
 
+/* Header */
 header {
     border-bottom: 2px solid #efefef;
 }
@@ -36,11 +37,21 @@ header {
 }
 
 #myname {
+    text-decoration: none;
     margin: 0;
-    color: white;
+    color: #ffffff;
     text-align: center;
     padding: 25px;
     background-color: #4aaaa5;
+}
+
+#myname a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#myname:hover{
+    background-color: #666666
 }
 
 .nav {
@@ -72,14 +83,20 @@ header {
 
 #borderL {border-left: 2px solid #efefef;}
 
-/*End header
-Begin main content */
-
+/* Main content */
 .background {
     padding-top: 36px;
     padding-bottom: 120px;
     background-image: url(../images/white-waves.png);
-    min-height: calc(100vh - 245px);
+    min-height: calc(80vh - 25px);
+    margin: 0 auto -50px;
+}
+
+.background2 {
+    padding-top: 36px;
+    padding-bottom: 120px;
+    background-image: url(../images/just-waves.png);
+    min-height: calc(80vh - 25px);
     margin: 0 auto -50px;
 }
 
@@ -90,7 +107,7 @@ Begin main content */
     background-color: #ffffff;
 }
 
-#contenttitle {
+.contenttitle {
     color: #4aaaa5;
     padding-left: 30px;
     padding-top: 10px;
@@ -106,13 +123,10 @@ Begin main content */
 
 .content {
     padding: 30px;
-}
-
-
-p {
     line-height: 2;
     color: #666666;
 }
+
 
 .profilepic {
     height:200px;
@@ -123,30 +137,7 @@ p {
     float: left;
 }
 
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    margin: 0;
-    width: 100%;
-    height: 58px;
-    background-color: #666666;
-    border-top: 8px solid #4aaaa5;
-    align-items: center;
-}
-
-#copyright {
-    position: relative;
-    bottom: -33px;
-    color: #c1c1c1;
-    text-align: center;
-    font-size: 80%;
-    line-height: 20px;
-    margin: 0;
-}
-
 /* Portfolio */
-
 .portfolio-content {
     padding: 30px;
     width: 500px;
@@ -154,11 +145,7 @@ p {
 
 .portfolio-pic {
     display: inline;
-    width: 230px;
-    height: 230px;
     position: relative;
-    padding-right: 30px;
-    padding-bottom: 30px;
 }
 
 .portfolio-text {
@@ -175,13 +162,12 @@ p {
 
 /* Contact form */
 input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */  
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
+    width: 100%; 
+    padding: 12px; 
+    box-sizing: border-box; 
+    border: 1px solid #dddddd;
+    margin-top: 6px; 
+    margin-bottom: 16px; 
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
   }
   
@@ -189,19 +175,70 @@ input[type=text], select, textarea {
   input[type=submit] {
     background-color: #4aaaa5;
     color: white;
-    padding: 12px 20px;
+    padding: 12px 33px;
     border: none;
     cursor: pointer;
+    font-size: 18px;
   }
   
-  /* When moving the mouse over the submit button, add a darker green color */
   input[type=submit]:hover {
     background-color: #666666;
   }
   
-  /* Add a background color and some padding around the form */
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
+
+  /* Footer */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    height: 58px;
+    background-color: #666666;
+    border-top: 8px solid #4aaaa5;
+    align-items: center;
+}
+
+#copyright {
+    position: absolute;
+    font-size: 80%;
+    text-align: center;
+    width: 100%;
+    bottom: 5px;
+    text-decoration: none;
+    color: #c1c1c1;
+}
+
+#copyright:hover {
+    color: #4aaaa5;
+}
+
+/* Feedback page */
+#feedbackwrap {
+    margin: 0 auto;
+    padding: 100px;
+}
+
+.feedback {
+    color: #4aaaa5;
+    text-align: center;
+    margin: 0 auto 0 auto;
+}
+
+#returnbox {
+    text-align: center;
+    border: 1px solid #4aaaa5;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+#return {
+    text-decoration: none;
+    color: #666666;
+    margin: 10px;
+}
+
+#returnbox:hover {
+    background-color: #4aaaa5;
+    color: #ffffff;
+}
