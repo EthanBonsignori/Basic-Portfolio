@@ -1,4 +1,2 @@
-# Basic-Portfolio
-
-TODO: -Add links to portfolio page
-      -Animations?
+# EthanBonsignori.github.io
+My first website
